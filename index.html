@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form to PDF</title>
+    <title>Form with E-Signature</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +17,13 @@
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <label for="signature">Signature:</label>
+        <div>
+            <canvas id="signature-pad" width="400" height="100" style="border:1px solid #000;"></canvas>
+        </div>
+        <button type="button" id="clear-signature">Clear Signature</button>
+        <br><br>
 
         <button type="button" id="submit-btn">Generate PDF</button>
     </form>
