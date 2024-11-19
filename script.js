@@ -10,7 +10,7 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
     const doc = new jsPDF();
 
     // Add a logo (ensure your logo file is in the same directory or use a URL)
-    const logo = await loadImage('logo.png'); // Replace with your logo path or URL
+    const logo = await loadImage('dlg-logo-e1368511454176.webp'); // Replace with your logo path or URL
     doc.addImage(logo, 'PNG', 10, 10, 30, 30); // x, y, width, height
 
     // Add header
